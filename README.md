@@ -7,3 +7,9 @@ En personlig webbportfölj skapad för att visa upp mina kunskaper, projekt och 
 - **Portfölj**: Några av de projekt som jag har arbetat med, samt en länk till min GitHub.
 - **Referenser**: Några referenser berättar vad de tycker om mig!
 - **Kontaktformulär**: Ett kontaktformulär som skickar inmatad data till *formshow.systementor*. Ett krav för godkänt på uppgiften som lär tas bort senare.
+
+### Teknologier
+- **HTML5**: Semantisk struktur
+- **CSS**: Styling
+- **JavaScript**: Interaktivitet
+- **Git/GitHub**: Versionshantering
