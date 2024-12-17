@@ -1,1 +1,2 @@
-# Portfolio
+# Developer Portfolio - Jessica Campbell
+En personlig webbportfölj skapad för att visa upp mina kunskaper, projekt och lite om vem jag är. Portföljen är från början ett examinerande moment i kursen *Frontend 1* under utbildningen *Programutvecklare .NET* på Nackademin.
