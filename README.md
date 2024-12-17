@@ -13,3 +13,5 @@ En personlig webbportfölj skapad för att visa upp mina kunskaper, projekt och 
 - **CSS**: Styling
 - **JavaScript**: Interaktivitet
 - **Git/GitHub**: Versionshantering
+
+Skapad av [Jessica Campbell](https://github.com/jesscampb)
