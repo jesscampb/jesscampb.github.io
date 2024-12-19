@@ -16,9 +16,9 @@ En personlig webbportfölj skapad för att visa upp mina kunskaper, projekt och 
 
 ### Planerade implementationer
 - Showcase av några projekt i portföljsektionen.
-- Lägg på **React**.
 - JavaScript-validering för inmatningar i kontaktformuläret.
 - Responsiv design med mobile-first approach.
 - Styling med vanilla CSS.
+- Lägg till vädersektion med externt API-anrop.
 
 Skapad av [Jessica Campbell](https://github.com/jesscampb)
