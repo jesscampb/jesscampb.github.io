@@ -4,7 +4,8 @@ window.onload = function () {
 
     // create the pristine instance
     var pristine = new Pristine(form,{
-        errorTextParent: 'form-input'
+        classTo: 'form-input',
+        errorTextParent: 'form-input',
     });
 
     form.addEventListener('submit', function (e) {
