@@ -1,9 +1,8 @@
 window.onload = function () {
 
-    var form = document.getElementById("contact-form");
+    let form = document.getElementById("contact-form");
 
-    // create the pristine instance
-    var pristine = new Pristine(form,{
+    let pristine = new Pristine(form,{
         classTo: 'form-input',
         errorTextParent: 'form-input',
     });
@@ -11,8 +10,11 @@ window.onload = function () {
     form.addEventListener('submit', function (e) {
        e.preventDefault();
        
-       // check if the form is valid
-       var valid = pristine.validate(); // returns true or false
+       let valid = pristine.validate();
+
+        if (valid){
+            form.submit();
+        }
 
     });
 };
