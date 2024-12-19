@@ -96,19 +96,21 @@
                 <label>Lämna ett meddelande</label>
                 <div class="form-input">
                     <input type="text" name="Namn" id="name" size="30" placeholder="Namn"
-                     data-pristine-required-message="Du måste ange ditt namn."
+                     data-pristine-required-message="Detta fält måste fyllas i."
                      data-pristine-minlength-message="Du måste ange minst 2 tecken."
                      required minlength="2" maxlength="40">
                 </div>
                 <div class="form-input">
                     <input type="email" name="Email" id="email" size="30" placeholder="E-mail"
-                     data-pristine-required-message="Du måste ange en e-mailadress"
+                     data-pristine-required-message="Detta fält måste fyllas i."
+                     data-pristine-email-message="Ange en giltig e-mailadress."
                      required maxlength="30">
                 </div>
                 <div class="form-input">
                     <textarea name="Meddelande" id="message" cols="40" rows="7" placeholder="Meddelande"
-                     data-pristine-required-message="Du måste ange ett meddelande."
-                     required minlength="1" maxlength="150"></textarea>
+                     data-pristine-required-message="Detta fält måste fyllas i."
+                     data-pristine-minlength-message="Meddelandet måste vara minst 5 tecken."
+                     required minlength="5" maxlength="150"></textarea>
                 </div>
                 <div>
                     <input type="submit" value="Skicka">
