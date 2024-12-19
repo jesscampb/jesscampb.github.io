@@ -92,16 +92,25 @@
         </section>
         <section>
             <a id="contact"></a>
-            <form action="https://formshow.systementor.se" method="post">
+            <form id="contact-form" novalidate action="https://formshow.systementor.se" method="post" target="_blank">
                 <label>Lämna ett meddelande</label>
-                <div>
-                    <input type="text" name="Namn" id="name" size="30" placeholder="Namn">
+                <div class="form-input">
+                    <input type="text" name="Namn" id="name" size="30" placeholder="Namn"
+                     data-pristine-required-message="Detta fält måste fyllas i."
+                     data-pristine-minlength-message="Du måste ange minst 2 tecken."
+                     required minlength="2" maxlength="40">
                 </div>
-                <div>
-                    <input type="email" name="Email" id="email" size="30" placeholder="Email">
+                <div class="form-input">
+                    <input type="email" name="Email" id="email" size="30" placeholder="E-mail"
+                     data-pristine-required-message="Detta fält måste fyllas i."
+                     data-pristine-email-message="Ange en giltig e-mailadress."
+                     required maxlength="30">
                 </div>
-                <div>
-                    <textarea name="Meddelande" id="message" cols="40" rows="7" placeholder="Meddelande"></textarea>
+                <div class="form-input">
+                    <textarea name="Meddelande" id="message" cols="40" rows="7" placeholder="Meddelande"
+                     data-pristine-required-message="Detta fält måste fyllas i."
+                     data-pristine-minlength-message="Meddelandet måste vara minst 5 tecken."
+                     required minlength="5" maxlength="150"></textarea>
                 </div>
                 <div>
                     <input type="submit" value="Skicka">
@@ -112,5 +121,8 @@
     <footer>
         <p>&copy; 2024 Jessica Campbell</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/pristinejs@1.1.0/dist/pristine.min.js"></script>
+    <script src="initpristine.js"></script>
 </body>
 </html>
