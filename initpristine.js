@@ -1,9 +1,11 @@
 window.onload = function () {
 
-    var form = document.getElementById("form-contact");
+    var form = document.getElementById("contact-form");
 
     // create the pristine instance
-    var pristine = new Pristine(form);
+    var pristine = new Pristine(form,{
+        errorTextParent: 'form-input'
+    });
 
     form.addEventListener('submit', function (e) {
        e.preventDefault();
