@@ -37,13 +37,27 @@ function displayWeatherInfo(data){
 
     const cityDisplay = document.createElement("h2");
     const tempDisplay = document.createElement("p");
-    // const feelsLikeDisplay = document.createElement("p");
-    // const descriptionDisplay = document.createElement("p");
+    const feelsLikeDisplay = document.createElement("p");
+    const descriptionDisplay = document.createElement("p");
     const weatherIcon = document.createElement("p");
 
     cityDisplay.textContent = city;
+    tempDisplay.textContent = `${(temp).toFixed()}°C`;
+    feelsLikeDisplay.textContent = `Känns som: ${(feels_like).toFixed()}°C`;
+    descriptionDisplay.textContent = description;
+    weatherIcon.textContent = getWeatherIcon();
+
+    cityDisplay.classList.add("city-display");
+    tempDisplay.classList.add("temp-display");
+    feelsLikeDisplay.classList.add("feels-like-display");
+    descriptionDisplay.classList.add("description-display");
+    weatherIcon.classList.add("weather-icon");
 
     weatherCard.appendChild(cityDisplay);
+    weatherCard.appendChild(tempDisplay);
+    weatherCard.appendChild(feelsLikeDisplay);
+    weatherCard.appendChild(descriptionDisplay);
+    weatherCard.appendChild(weatherIcon);
 }
 
 // Get icon based on weather ID
@@ -56,7 +70,7 @@ function displayError(message){
     
     const errorDisplay = document.createElement("p");
     errorDisplay.textContent = message;
-    // hämtar .error-display CSS - kommentera bort när css är kodat
-    //errorDisplay.classList.add("error-display");
+    // hämtar .errorDisplay CSS - kommentera bort när css är kodat
+    //errorDisplay.classList.add("errorDisplay");
     
 }
