@@ -14,7 +14,7 @@ async function getWeatherData(){
         const response = await fetch(apiUrl);
 
         if(!response.ok){
-            throw new Error("Could not fetch weather data."); //displayError()??
+            throw new Error("Could not fetch weather data.");
         }
 
         const data = await response.json();
@@ -22,6 +22,7 @@ async function getWeatherData(){
     }
     catch(error){
         console.error(error);
+        displayError(error);
     }
 }
 
@@ -45,7 +46,7 @@ function displayWeatherInfo(data){
     tempDisplay.textContent = `${(temp).toFixed()}°C`;
     feelsLikeDisplay.textContent = `Känns som: ${(feels_like).toFixed()}°C`;
     descriptionDisplay.textContent = description;
-    weatherIcon.textContent = getWeatherIcon();
+    weatherIcon.textContent = getWeatherIcon(id);
 
     cityDisplay.classList.add("city-display");
     tempDisplay.classList.add("temp-display");
@@ -63,6 +64,25 @@ function displayWeatherInfo(data){
 // Get icon based on weather ID
 function getWeatherIcon(weatherId){
 
+    // Ändra string returns till ikoner/bilder från images-mappen eller liknande
+    switch (true){
+        case (weatherId >= 200 && weatherId < 300):
+            return "thunderstorm icon";
+        case (weatherId >= 300 && weatherId < 400):
+            return "drizzle icon";
+        case (weatherId >= 500 && weatherId < 600):
+            return "rain icon";
+        case (weatherId >= 600 && weatherId < 700):
+            return "snow icon";
+        case (weatherId >= 700 && weatherId < 800):
+            return "mist icon";
+        case (weatherId === 800):
+            return "clear sky/sun icon";
+        case (weatherId >= 801 && weatherId < 810):
+            return "clouds icon";
+        default:
+            return "unknown weather/ufo icon";
+    }
 }
 
 
@@ -70,7 +90,9 @@ function displayError(message){
     
     const errorDisplay = document.createElement("p");
     errorDisplay.textContent = message;
-    // hämtar .errorDisplay CSS - kommentera bort när css är kodat
-    //errorDisplay.classList.add("errorDisplay");
+    errorDisplay.classList.add("errorDisplay");
     
+    weatherCard.textContent = "";
+    weatherCard.style.display = "flex";
+    weatherCard.appendChild(errorDisplay);
 }
