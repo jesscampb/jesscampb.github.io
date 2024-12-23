@@ -1,5 +1,15 @@
+/* Reset */
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+}
+
+
+h2, h3, h4{
+    font-family: 'Playfair Display', sans-serif;
+}
+
+body, p{
+    font-family: 'Montserrat', sans-serif;
 }
