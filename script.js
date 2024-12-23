@@ -1,3 +1,17 @@
+// Collapsable project details
+
+function showDetails(projectId){
+    const details = document.getElementById(projectId);
+
+    if (details.style.display === "block"){
+        details.style.display = "none";
+    }
+    else{
+        details.style.display = "block";
+    }
+}
+
+
 // Weather API
 
 const apiKey = "211ebcacbe72f8271cad90e28195cf46";
