@@ -6,10 +6,14 @@
 }
 
 
-h2, h3, h4{
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4{
     font-family: 'Playfair Display', sans-serif;
 }
 
-body, p{
-    font-family: 'Montserrat', sans-serif;
+.project-card-image {
+    width: 400px;
 }
