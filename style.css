@@ -15,7 +15,27 @@ h1, h2, h3, h4{
 }
 
 /* Navigation */
+header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
 
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.header-menu {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+.header-menu-item {
+    text-decoration: none;
+
+}
 
 /* Main comment */
 main {
