@@ -162,3 +162,15 @@ nav {
 .project-card-details a {
     font-weight: 600;
 }
+
+
+/* Reference section */
+.reference-card {
+    display: flex;
+    border: 1px solid black;
+}
+
+.reference-card div {
+    padding: 10px;
+    border: 1px solid black;
+}
