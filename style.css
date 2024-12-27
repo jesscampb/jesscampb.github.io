@@ -69,6 +69,25 @@ section {
     border-radius: 10px;
 }
 
+.about {
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.about-image {
+    margin-right: 0px;
+    border: 3px outset rgb(54, 54, 54);
+    border-radius: 50%;
+}
+
+.about-description {
+
+}
+
 
 /* Temporary */
 header, footer {
