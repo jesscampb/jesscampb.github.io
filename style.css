@@ -1,4 +1,4 @@
-/* Reset */
+/* Global reset */
 * {
     margin: 0px;
     padding: 0px;
@@ -6,8 +6,13 @@
 }
 
 
+/* Fonts & colors */
 body {
     font-family: 'Montserrat', sans-serif;
+}
+
+header, footer {
+    background-color: #e7e7e7;
 }
 
 h1, h2, h3, h4{
@@ -16,6 +21,40 @@ h1, h2, h3, h4{
 
 a {
     color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(102, 50, 142);
+}
+
+i {
+    font-size: 2.4rem;
+}
+
+
+/* General layout */
+main {
+    margin: 50px 0 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+section {
+    max-width: 650px;
+    width: 90%;
+    padding: 30px;
+    align-items: center;
+
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+article {
+    margin-top: 20px;
+    padding: 10px;
 }
 
 
@@ -41,48 +80,108 @@ nav {
 }
 
 .header-menu-item {
-    text-decoration: none;
     padding: 7px;
 }
 
-.header-menu-item:hover {
-    color: rgb(102, 50, 142);
+
+/* About section */
+.about {
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.about-image {
+    margin-right: 0px;
+    border: 3px outset rgb(54, 54, 54);
+    border-radius: 50%;
 }
 
 
-/* Main content */
-main {
-    margin: 50px 0 50px 0;
+/* Skills section */
+.skills {
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+/* Project section */
+.project-card {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 50px;
-}
-
-section {
-    max-width: 650px;
-    width: 90%;
-    padding: 20px;
-    align-items: center;
-
-    border: 2px solid black;
-    border-radius: 10px;
-}
-
-
-/* Temporary */
-header, footer {
-    background-color: #e7e7e7;
-}
-
-.project-card {
     border: 1px solid black;
 }
+
+.project-card-title {
+    margin: 10px 0 15px 0;
+    padding: 10px;
+    align-self: center;
+    font-size: 22px;
+}
+
 .project-card-image {
-    width: 400px;
+    width: 100%;
+    align-self: center;
+}
+
+.project-card-summary {
+    margin: 15px 0 10px 0;
+    padding: 10px;
+    align-self: center;
+}
+
+.project-card-details {
+    padding: 20px;
+    display: none
+}
+
+.project-card-details p {
+    margin: 10px 0 20px 0;
+}
+
+.project-card-details h4 {
+    margin-top: 20px;
+    font-size: 19px;
+}
+
+.project-card-details-list {
+    margin: 10px 0 15px 0;
+    list-style: none;
+}
+
+.project-card-details-list li {
+    margin: 5px 0 5px 0;
+}
+
+.project-card-details a {
+    font-weight: 600;
 }
 
 
-.project-card-details {
-    display: none
+/* Reference section */
+.reference-card {
+    display: flex;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.reference-card div {
+    padding: 10px;
+}
+
+.reference-card-info {
+    width: 40%;
+    flex-direction: column;
+    align-content: center;
+}
+
+.reference-card-comment {
+    width: 60%;
+    font-style: italic;
 }
