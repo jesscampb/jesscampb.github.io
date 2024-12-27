@@ -67,6 +67,10 @@ header {
     justify-content: space-between;
 }
 
+h1 {
+    padding: 0 10px 0 10px;
+}
+
 nav {
     display: flex;
     justify-content: space-evenly;
@@ -75,12 +79,13 @@ nav {
 
 .header-menu {
     display: flex;
+    align-items: center;
     list-style: none;
-    gap: 10px;
+    gap: 20px;
 }
 
 .header-menu-item {
-    padding: 7px;
+    padding: 10px;
 }
 
 
