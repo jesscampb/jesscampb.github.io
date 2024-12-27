@@ -185,3 +185,34 @@ nav {
     width: 60%;
     font-style: italic;
 }
+
+
+/* Footer section */
+footer {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.weather-section, .contact-section {
+    margin-bottom: 20px;
+    padding: 0;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    border: none;
+}
+
+.divider {
+    width: 100%;
+    border-top: 1px solid #a9a9a9;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+form, .weather-card {
+    padding: 10px;
+}
