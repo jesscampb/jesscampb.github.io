@@ -10,6 +10,7 @@
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <h1>Jessica Campbell</h1>
@@ -28,21 +29,25 @@
             </ul>
         </nav>
     </header>
+
     <main>
         <section>
             <a id="about"></a>
             <h2>Om mig</h2>
-            <img src="images/jessica.jpg" alt="Bild på mig" width="200">
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos odit aliquam 
-                sed numquam consectetur ullam harum explicabo facere quam aliquid cum, 
-                debitis id deserunt et hic dignissimos reprehenderit exercitationem ipsum!
-            </p>
+            <div class="about">
+                <img class="about-image" src="images/jessica.jpg" alt="Bild på mig" width="200">
+                <p class="about-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos odit aliquam 
+                    sed numquam consectetur ullam harum explicabo facere quam aliquid cum, 
+                    debitis id deserunt et hic dignissimos reprehenderit exercitationem ipsum!
+                </p>
+            </div>
         </section>
+
         <section>
             <a id="skills"></a>
             <h2>Teknologiska kunskaper</h2>
-            <div>
+            <div class="skills">
                 <!-- Languages -->
                 <i class="devicon-csharp-plain"></i>
                 <i class="devicon-html5-plain"></i>
@@ -256,32 +261,36 @@
 
         <section>
             <a id="references"></a>
-            <h2>Vad folk säger om mig</h2>
-            <article>
+            <h2>Det här säger andra om mig</h2>
+
+            <article class="reference-card">
                 <h3>Namn</h3>
-                <h4>Arbetsroll/relation</h4>
+                <p>Arbetsroll/relation</p>
                 <p>
                     "Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Dicta mollitia temporibus molestias nihil minima quaerat."
                 </p>
             </article>
-            <article>
+
+            <article class="reference-card">
                 <h3>Namn</h3>
-                <h4>Arbetsroll/relation</h4>
+                <p>Arbetsroll/relation</p>
                 <p>
                     "Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Voluptatem, consequatur!"
                 </p>
             </article>
-            <article>
+
+            <article class="reference-card">
                 <h3>Namn</h3>
-                <h4>Arbetsroll/relation</h4>
+                <p>Arbetsroll/relation</p>
                 <p>
                     "Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                     Tempore ab rerum voluptas atque!"
                 </p>
             </article>
         </section>
+
         <section>
             <a id="contact"></a>
             <form id="contact-form" novalidate action="https://formshow.systementor.se" method="post" target="_blank">
