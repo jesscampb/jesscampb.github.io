@@ -168,9 +168,20 @@ nav {
 .reference-card {
     display: flex;
     border: 1px solid black;
+    text-align: center;
 }
 
 .reference-card div {
     padding: 10px;
-    border: 1px solid black;
+}
+
+.reference-card-info {
+    width: 40%;
+    flex-direction: column;
+    align-content: center;
+}
+
+.reference-card-comment {
+    width: 60%;
+    font-style: italic;
 }
