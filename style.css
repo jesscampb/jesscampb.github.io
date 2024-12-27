@@ -18,6 +18,7 @@ a {
     color: black;
 }
 
+
 /* Navigation */
 header {
     position: sticky;
@@ -42,6 +43,10 @@ nav {
 .header-menu-item {
     text-decoration: none;
     padding: 7px;
+}
+
+.header-menu-item:hover {
+    color: rgb(102, 50, 142);
 }
 
 
