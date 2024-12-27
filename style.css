@@ -84,10 +84,17 @@ section {
     border-radius: 50%;
 }
 
-.about-description {
-
+.skills {
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
+i {
+    font-size: 2.4rem;
+}
 
 /* Temporary */
 header, footer {
