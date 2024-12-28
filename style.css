@@ -31,7 +31,7 @@ a:hover {
 
 /* General layout */
 main {
-    margin: 50px 0 50px 0;
+    margin: 50px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -48,11 +48,6 @@ section {
     border-radius: 10px;
 }
 
-article {
-    margin-top: 20px;
-    padding: 10px;
-}
-
 
 /* Navigation */
 header {
@@ -64,7 +59,7 @@ header {
 }
 
 h1 {
-    padding: 0 10px 0 10px;
+    padding: 0 10px;
 }
 
 nav {
@@ -74,7 +69,7 @@ nav {
 }
 
 .header-menu {
-    padding: 0 10px 0 10px;
+    padding: 0 10px;
     display: flex;
     align-items: center;
     list-style: none;
@@ -86,7 +81,7 @@ nav {
 }
 
 .header-menu-icon {
-    padding: 10px 5px 10px 5px;
+    padding: 10px 5px;
     font-size: 26px;
 }
 
@@ -131,14 +126,15 @@ nav {
 
 /* Project section */
 .project-card {
+    margin: 20px 0;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     border: 1px solid black;
 }
 
 .project-card-title {
-    margin: 10px 0 15px 0;
-    padding: 10px;
+    margin: 10px 0 15px;
     align-self: center;
     font-size: 22px;
 }
@@ -149,18 +145,18 @@ nav {
 }
 
 .project-card-summary {
-    margin: 15px 0 10px 0;
+    margin: 10px 0;
     padding: 10px;
     align-self: center;
 }
 
 .project-card-details {
-    padding: 20px;
+    padding: 10px;
     display: none
 }
 
 .project-card-details p {
-    margin: 10px 0 20px 0;
+    margin: 10px 0 20px;
 }
 
 .project-card-details h4 {
@@ -169,12 +165,12 @@ nav {
 }
 
 .project-card-details-list {
-    margin: 10px 0 15px 0;
+    margin: 10px 0 15px;
     list-style: none;
 }
 
 .project-card-details-list li {
-    margin: 5px 0 5px 0;
+    margin: 5px 0;
 }
 
 .project-card-details a {
@@ -184,6 +180,8 @@ nav {
 
 /* Reference section */
 .reference-card {
+    margin-top: 20px;
+    padding: 10px;
     display: flex;
     border: 1px solid black;
     text-align: center;
