@@ -119,7 +119,13 @@ nav {
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 15px;
+
+}
+
+.skills i {
+    font-size: 34px;
 }
 
 
