@@ -28,6 +28,9 @@
 - Glow effect on hover
 - Style CV button
 - Style project details collapsible button
+- Paragraphs in project details instead of lists(?)
+- Style project GitHub-link
+- Style reference card comment (maybe add " or a background splash in primary bg color)
 - Style weather card
 - Style contact form
 - Style about image
@@ -198,6 +201,7 @@ nav {
     margin: 10px 0;
     padding: 10px;
     align-self: center;
+    font-weight: 500;
 }
 
 .project-card-details {
@@ -243,6 +247,10 @@ nav {
     width: 40%;
     flex-direction: column;
     align-content: center;
+}
+
+.reference-card-info p {
+    font-weight: 500;
 }
 
 .reference-card-comment {
