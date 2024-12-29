@@ -23,18 +23,6 @@
 }
 
 
-/* Todo-list:
-- Style project details collapsible button
-- cursor: pointer on links
-- Paragraphs in project details instead of lists(?)
-- Style reference card comment (maybe add " or a background splash in primary bg color)
-- Style weather card
-- Style contact form
-- Style about image
-- Code clean-up
-*/
-
-
 /* Text and color */
 body {
     font-family: 'Montserrat', sans-serif;
