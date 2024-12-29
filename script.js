@@ -1,5 +1,4 @@
-// Collapsable project details
-
+// Collapsible project details
 function toggleProjectDetails(projectId){
     const details = document.getElementById(projectId);
 
