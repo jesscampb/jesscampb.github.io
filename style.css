@@ -5,7 +5,7 @@
     /* Colors */
     --primary-bg-color: #f0f0f0;
     --secondary-bg-color: #f8f8f8;
-    --header-bg-color: #e0e0e0;
+    --tertiary-bg-color: #e0e0e0;
     --accent-color: #663399;
     --hover-depth-color: #330066;
     --text-color: #333333;
@@ -13,10 +13,7 @@
     /* Typography */
     --base-font-size: 16px;
     --base-line-height: 1.5;
-    --heading-font: 'Poppins', sans-serif;
-    --text-font: 'Montserrat', sans-serif;
 }
-
 
 /* Global reset */
 * {
@@ -26,27 +23,47 @@
 }
 
 
-/* Fonts & colors */
+/* Todo-list:
+- Glow effect on hover
+- Box-shadows on containers
+- Style weather card
+- Style contact form
+- Style about image
+- Code clean-up
+*/
+
+
+/* Text and color */
 body {
     font-family: 'Montserrat', sans-serif;
-    line-height: 1.4;
-}
-
-header, footer {
-    background-color: #e7e7e7;
+    line-height: var(--base-line-height);
+    color: var(--text-color);
+    background-color: var(--primary-bg-color);
 }
 
 h1, h2, h3, h4{
     font-family: 'Poppins', sans-serif;
 }
 
+h1 {
+    padding: 0 10px;
+    font-size: 35px;
+    color: var(--accent-color);
+    text-shadow: 2px 2px 2px #3333333d;
+}
+
+h2 {
+    text-align: center;
+    text-shadow: 2px 2px 1px #e0e0e0;
+}
+
 a {
-    color: black;
+    color: var(--text-color);
     text-decoration: none;
 }
 
 a:hover {
-    color: rgb(102, 50, 142);
+    color: var(--accent-color);
 }
 
 
@@ -60,27 +77,25 @@ main {
 }
 
 section {
+    padding: 30px;
     max-width: 650px;
     width: 90%;
-    padding: 30px;
     align-items: center;
-
-    border: 2px solid black;
+    background-color: var(--secondary-bg-color);
     border-radius: 10px;
+    box-shadow: 0 3px 4px 1px rgba(102, 51, 153, 0.14);
 }
 
 
 /* Navigation */
 header {
-    position: sticky;
-    top: 0;
     padding: 20px;
+    top: 0;
+    position: sticky;
     display: flex;
     justify-content: space-between;
-}
-
-h1 {
-    padding: 0 10px;
+    background-color: var(--tertiary-bg-color);
+    box-shadow: 0 2px 4px 0.5px rgba(0, 0, 0, 0.14);
 }
 
 nav {
@@ -226,18 +241,21 @@ nav {
 
 /* Footer section */
 footer {
-    padding: 20px;
+    padding: 10px;
     display: flex;
     flex-wrap: wrap;
+    background-color: var(--tertiary-bg-color);
+    box-shadow: 0 -2px -4px 1px rgba(0, 0, 0, 0.14);
 }
 
 .weather-section, .contact-section {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     padding: 0;
     width: 50%;
     display: flex;
     justify-content: center;
-    border: none;
+    background-color: var(--tertiary-bg-color);
+    box-shadow: none;
 }
 
 .divider {
@@ -246,8 +264,8 @@ footer {
 }
 
 .copyright {
-    margin-top: 20px;
-    font-size: 14px;
+    margin-top: 10px;
+    font-size: 13px;
 }
 
 form, .weather-card {
