@@ -330,6 +330,10 @@ footer {
     background-color: var(--tertiary-bg-color);
 }
 
+.hidden-heading {
+    display: none;
+}
+
 .weather-section, .contact-section {
     padding: 0;
     width: 50%;
