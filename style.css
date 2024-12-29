@@ -187,6 +187,7 @@ nav {
 
 .about-image {
     margin-right: 0px;
+    max-width: 200px;
     border: 2px solid var(--tertiary-bg-color);
     border-radius: 50%;
 }
