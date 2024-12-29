@@ -24,8 +24,10 @@
 
 
 /* Todo-list:
+- Slim down header
 - Glow effect on hover
-- Box-shadows on containers
+- Style CV button
+- Style project details collapsible button
 - Style weather card
 - Style contact form
 - Style about image
@@ -228,7 +230,6 @@ nav {
 
 /* Reference section */
 .reference-card {
-    margin-top: 20px;
     padding: 10px;
     display: flex;
     text-align: center;
