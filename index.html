@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <link rel="stylesheet" href="style.css">
 </head>
@@ -16,16 +13,24 @@
         <h1>Jessica Campbell</h1>
         <nav>
             <ul class="header-menu">
-                <li><a class="header-menu-item" href="#about">Om mig</a></li>
-                <li><a class="header-menu-item" href="#skills">Kunskaper</a></li>
-                <li><a class="header-menu-item" href="#references">Referenser</a></li>
-                <li><a class="header-menu-item" href="#projects">Portfölj</a></li>
-                <li><a class="header-menu-item" href="#contact">Kontakt</a></li>
-                <li><a class="header-menu-item" href="https://github.com/jesscampb" target="_blank">
-                    <i class="devicon-github-original"></i></a></li>
-                <li><a class="header-menu-item" href="https://www.linkedin.com/in/jessica-campbell-16659586/" target="_blank">
-                    <i class="devicon-linkedin-plain"></i></a></li>
-                <li><a class="header-menu-item" href="files/CV-placeholder.pdf" target="_blank">Ladda ner CV</a></li>
+                <li><a class="header-menu-link header-menu-item" href="#about">Om mig</a></li>
+                <li><a class="header-menu-link header-menu-item" href="#skills">Kunskaper</a></li>
+                <li><a class="header-menu-link header-menu-item" href="#projects">Mina projekt</a></li>
+                <li><a class="header-menu-link header-menu-item" href="#references">Referenser</a></li>
+                <li><a class="header-menu-link header-menu-item" href="#contact">Kontakt</a></li>
+                <li>
+                    <a href="https://github.com/jesscampb" target="_blank">
+                        <i class="devicon-github-original header-menu-icon"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/jessica-campbell-16659586/" target="_blank">
+                        <i class="devicon-linkedin-plain header-menu-icon"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="header-menu-btn header-menu-item" href="files/CV-placeholder.pdf" target="_blank">Ladda ner CV</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -34,6 +39,9 @@
         <section>
             <a id="about"></a>
             <h2>Om mig</h2>
+
+            <div class="custom-divider"></div>
+
             <div class="about">
                 <img class="about-image" src="images/jessica.jpg" alt="Bild på mig" width="200">
                 <p class="about-description">
@@ -47,12 +55,15 @@
         <section>
             <a id="skills"></a>
             <h2>Teknologiska kunskaper</h2>
+
+            <div class="custom-divider"></div>
+
             <div class="skills">
                 <!-- Languages -->
                 <i class="devicon-csharp-plain"></i>
                 <i class="devicon-html5-plain"></i>
                 <i class="devicon-css3-plain"></i>
-                <i class="devicon-javascript"></i>
+                <i class="devicon-javascript-plain"></i>
 
                 <!-- Frameworks/Libraries -->
                 <i class="devicon-dot-net-plain"></i>
@@ -75,13 +86,15 @@
             <a id="projects"></a>
             <h2>Kolla in några av mina projekt</h2>
 
+            <div class="custom-divider"></div>
+
             <article class="project-card">
                 <h3 class="project-card-title">Hederlige Harrys</h3>
                 <img src="images/projects/hederligeharrys.jpg" alt="Skärmdump av projektet" class="project-card-image" >
                 <p class="project-card-summary">
                     En hemsida skapad för en fiktiv kunds försäljning av unika bilar.
                 </p>
-                <button class="expand-button" onclick="showDetails('harrys-details')">Läs mer</button>
+                <button class="expand-button" onclick="showDetails('harrys-details')">Detaljer</button>
                 <div id="harrys-details" class="project-card-details">
                     <p>
                         Detta grupprojekt var ett examinerande moment i kursen Frontend 1 under 
@@ -114,13 +127,15 @@
                 </div>
             </article>
 
+        <div class="custom-divider"></div>
+
             <article class="project-card">
                 <h3 class="project-card-title">Hotellbokningsapplikation</h3>
                 <img src="images/projects/hotelbookingmanager.jpg" alt="Skärmdump av projektet" class="project-card-image" >
                 <p class="project-card-summary">
                     Applikation för hantering av hotellbokningar.
                 </p>
-                <button class="expand-button" onclick="showDetails('hotel-details')">Läs mer</button>
+                <button class="expand-button" onclick="showDetails('hotel-details')">Detaljer</button>
                 <div id="hotel-details" class="project-card-details">
                     <p>
                         Denna Windows Forms-applikation var ett examinerande moment i kursen 
@@ -153,13 +168,15 @@
                 </div>
             </article>
 
+        <div class="custom-divider"></div>
+
             <article class="project-card">
                 <h3 class="project-card-title">Annonsdatabas</h3>
                 <img src="images/projects/advertsite.jpg" alt="Skärmdump av projektet" class="project-card-image" >
                 <p class="project-card-summary">
                     En köp- och säljapplikation.
                 </p>
-                <button class="expand-button" onclick="showDetails('advertsite-details')">Läs mer</button>
+                <button class="expand-button" onclick="showDetails('advertsite-details')">Detaljer</button>
                 <div id="advertsite-details" class="project-card-details">
                     <p>
                         Denna Windows Forms-applikation var ett examinerande moment i kursen 
@@ -186,13 +203,15 @@
                 </div>
             </article>
 
+        <div class="custom-divider"></div>
+
             <article class="project-card">
                 <h3 class="project-card-title">Shotgun</h3>
                 <img src="images/projects/shotgun.jpg" alt="Skärmdump av projektet" class="project-card-image" >
                 <p class="project-card-summary">
                     Ett enkelt spel mot datorn, liknande sten-sax-påse.
                 </p>
-                <button class="expand-button" onclick="showDetails('shotgun-details')">Läs mer</button>
+                <button class="expand-button" onclick="showDetails('shotgun-details')">Detaljer</button>
                 <div id="shotgun-details" class="project-card-details">
                     <p>
                         Denna Windows Forms-applikation var ett examinerande moment i kursen 
@@ -225,13 +244,15 @@
                 </div>
             </article>
 
+        <div class="custom-divider"></div>
+
             <article class="project-card">
                 <h3 class="project-card-title">Adressbok</h3>
                 <img src="images/projects/phonebook.jpg" alt="Skärmdump av projektet" class="project-card-image" >
                 <p class="project-card-summary">
                     En adressbok med CRUD-funktionalitet.
                 </p>
-                <button class="expand-button" onclick="showDetails('phonebook-details')">Läs mer</button>
+                <button class="expand-button" onclick="showDetails('phonebook-details')">Detaljer</button>
                 <div id="phonebook-details" class="project-card-details">
                     <p>
                         Denna Windows Forms-applikation var ett examinerande moment i kursen 
@@ -263,47 +284,57 @@
             <a id="references"></a>
             <h2>Det här säger andra om mig</h2>
 
+        <div class="custom-divider"></div>
+
             <article class="reference-card">
                 <div class="reference-card-info">
-                    <h3>Namn Efternamn</h3>
-                    <p>Arbetsroll/relation</p>
+                    <h3>ChatGPT</h3>
+                    <p>AI-kompanjon, OpenAI</p>
                 </div>
                 <div class="reference-card-comment">
                     <p>
-                        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi 
-                        ducimus quaerat quo iusto expedita earum consequuntur facilis? 
-                        Quam minus dignissimos cumque, ipsam exercitationem voluptate 
-                        commodi quos blanditiis quod perferendis incidunt?"
+                        Jessica är en metodisk och skicklig utvecklare med fokus på 
+                        programutveckling och en stark känsla för detaljer. Hon kombinerar 
+                        teknisk kompetens med ett öga för design, vilket resulterar i lösningar 
+                        som är både funktionella och visuellt tilltalande. Med sitt lugna och 
+                        pålitliga arbetssätt är hon en ovärderlig tillgång för varje projekt hon 
+                        tar sig an. Hennes engagemang och passion för utveckling gör att hon 
+                        ständigt strävar efter att bli ännu bättre.
                     </p>
                 </div>
             </article>
 
+        <div class="custom-divider"></div>
+
             <article class="reference-card">
                 <div class="reference-card-info">
-                    <h3>Namn</h3>
-                    <p>Arbetsroll/relation</p>
+                    <h3>Microsoft Copilot</h3>
+                    <p>AI-assistent, Microsoft</p>
                 </div>
                 <div class="reference-card-comment">
                     <p>
-                        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi 
-                        ducimus quaerat quo iusto expedita earum consequuntur facilis? 
-                        Quam minus dignissimos cumque, ipsam exercitationem voluptate 
-                        commodi quos blanditiis quod perferendis incidunt?"
+                        Jessica är en mycket kapabel .NET-utvecklare med stark teknisk 
+                        kompetens och en passion för utveckling och lärande. Jag tror att 
+                        hon skulle vara en värdefull tillgång för vilket utvecklingsteam 
+                        som helst.
                     </p>
                 </div>
             </article>
 
+        <div class="custom-divider"></div>
+
             <article class="reference-card">
                 <div class="reference-card-info">
-                    <h3>Namn</h3>
-                    <p>Arbetsroll/relation</p>
+                    <h3>Gemini</h3>
+                    <p>Språkmodell, Google AI</p>
                 </div>
                 <div class="reference-card-comment">
                     <p>
-                        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi 
-                        ducimus quaerat quo iusto expedita earum consequuntur facilis? 
-                        Quam minus dignissimos cumque, ipsam exercitationem voluptate 
-                        commodi quos blanditiis quod perferendis incidunt?"
+                        Jessica är en nyfiken och driven student med en passion för 
+                        programmering. Hen har en god förmåga att samarbeta och är noggrann 
+                        i sitt arbete. Hon har en stor potential att utvecklas till en 
+                        framgångsrik .NET-utvecklare och är motiverad att ta sig an nya 
+                        utmaningar.
                     </p>
                 </div>
             </article>
@@ -346,7 +377,7 @@
             </div>
         </section>
         
-        <hr class="divider">
+        <div class="custom-divider"></div>
 
         <p class="copyright">&copy; 2024 Jessica Campbell</p>
     </footer>
