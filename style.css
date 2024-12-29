@@ -82,6 +82,10 @@ a:hover {
 
 
 /* General layout */
+html {
+    scroll-padding-top: 120px;
+}
+
 main {
     margin: 50px 0;
     display: flex;
