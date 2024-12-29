@@ -1,6 +1,6 @@
 // Collapsable project details
 
-function showDetails(projectId){
+function toggleProjectDetails(projectId){
     const details = document.getElementById(projectId);
 
     if (details.style.display === "block"){
