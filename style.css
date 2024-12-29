@@ -23,18 +23,6 @@
 }
 
 
-/* Todo-list:
-- Style project details collapsible button
-- cursor: pointer on links
-- Paragraphs in project details instead of lists(?)
-- Style reference card comment (maybe add " or a background splash in primary bg color)
-- Style weather card
-- Style contact form
-- Style about image
-- Code clean-up
-*/
-
-
 /* Text and color */
 body {
     font-family: 'Montserrat', sans-serif;
@@ -68,7 +56,9 @@ h3 {
 a {
     color: var(--text-color);
     text-decoration: none;
-    transition: color 0.3s ease, text-shadow 0.3s ease;
+    transition: 
+        color 0.3s ease,
+        text-shadow 0.3s ease;
 }
 
 a:hover {
@@ -82,6 +72,10 @@ a:hover {
 
 
 /* General layout */
+html {
+    scroll-padding-top: 120px;
+}
+
 main {
     margin: 50px 0;
     display: flex;
@@ -183,6 +177,7 @@ nav {
 
 .about-image {
     margin-right: 0px;
+    max-width: 200px;
     border: 2px solid var(--tertiary-bg-color);
     border-radius: 50%;
 }
@@ -276,6 +271,11 @@ nav {
     font-size: 19px;
 }
 
+.project-card-details a {
+    font-weight: 700;
+    color: var(--accent-color);
+}
+
 .project-card-details-list {
     margin: 10px 0 15px;
     list-style: none;
@@ -283,10 +283,6 @@ nav {
 
 .project-card-details-list li {
     margin: 5px 0;
-}
-
-.project-card-details a {
-    font-weight: 600;
 }
 
 
@@ -325,6 +321,10 @@ footer {
     background-color: var(--tertiary-bg-color);
 }
 
+.hidden-heading {
+    display: none;
+}
+
 .weather-section, .contact-section {
     padding: 0;
     width: 50%;
@@ -336,6 +336,7 @@ footer {
 
 .copyright {
     font-size: 13px;
+    width: 100%;
 }
 
 form, .weather-card {
