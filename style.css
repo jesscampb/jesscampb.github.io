@@ -147,7 +147,6 @@ nav {
 
 /* About section */
 .about {
-    margin-top: 20px;
     padding: 10px;
     display: flex;
     justify-content: center;
@@ -161,10 +160,13 @@ nav {
     border-radius: 50%;
 }
 
+.about-description {
+    text-align: center;
+}
+
 
 /* Skills section */
 .skills {
-    margin-top: 20px;
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
