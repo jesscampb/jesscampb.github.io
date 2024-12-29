@@ -134,6 +134,10 @@ nav {
     padding: 10px;
 }
 
+.header-menu-link {
+    font-weight: 600;
+}
+
 .header-menu-icon {
     padding: 10px 5px;
     font-size: 26px;
