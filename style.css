@@ -173,7 +173,6 @@ nav {
     padding: 10px;
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
 }
 
 .project-card-title {
@@ -226,7 +225,6 @@ nav {
     margin-top: 20px;
     padding: 10px;
     display: flex;
-    border: 1px solid black;
     text-align: center;
 }
 
