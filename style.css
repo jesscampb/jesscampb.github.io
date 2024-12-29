@@ -24,11 +24,9 @@
 
 
 /* Todo-list:
-- Glow effect on hover
-- Style CV button
 - Style project details collapsible button
+- cursor: pointer on links
 - Paragraphs in project details instead of lists(?)
-- Style project GitHub-link
 - Style reference card comment (maybe add " or a background splash in primary bg color)
 - Style weather card
 - Style contact form
@@ -68,16 +66,12 @@ h3 {
 }
 
 a {
-    /* color: var(--text-color);
-    text-decoration: none; */
     color: var(--text-color);
     text-decoration: none;
     transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 a:hover {
-    /* color: var(--accent-color);
-    text-shadow: 0 0 10px var(--hover-depth-color); */
     color: var(--accent-color);
     text-shadow: 
         0 0 10px var(--accent-color),
@@ -163,7 +157,9 @@ nav {
     color: var(--secondary-bg-color);
     background-color: var(--accent-color);
     border-radius: 15px;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    transition:
+        background-color 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
 .header-menu-btn:hover {
@@ -173,7 +169,6 @@ nav {
         0 0 10px var(--accent-color),
         0 0 20px var(--hover-depth-color),
         0 0 30px rgba(51, 0, 102, 0.7);
-    transform: scale(1.05);
 }
 
 
@@ -236,6 +231,35 @@ nav {
     padding: 10px;
     align-self: center;
     font-weight: 500;
+}
+
+.expand-button {
+    padding: 5px 0;
+    /* background-color: var(--accent-color); */
+    background-image: linear-gradient(
+        to left,
+        var(--secondary-bg-color),
+        var(--accent-color),
+        var(--accent-color),
+        var(--accent-color),
+        var(--secondary-bg-color));
+    color: var(--secondary-bg-color);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    border: none;
+    transition: 
+        background-color 0.3s ease,
+        opacity 0.3s ease;
+}
+
+.expand-button:hover {
+    background-image: linear-gradient(
+        to left,
+        var(--secondary-bg-color),
+        var(--hover-depth-color),
+        var(--hover-depth-color),
+        var(--hover-depth-color),
+        var(--secondary-bg-color));
 }
 
 .project-card-details {
