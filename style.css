@@ -24,7 +24,6 @@
 
 
 /* Todo-list:
-- Slim down header
 - Glow effect on hover
 - Style CV button
 - Style project details collapsible button
@@ -107,7 +106,7 @@ section {
 
 /* Navigation */
 header {
-    padding: 20px;
+    padding: 10px 20px;
     top: 0;
     position: sticky;
     display: flex;
