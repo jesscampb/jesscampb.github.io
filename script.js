@@ -78,24 +78,23 @@ function displayWeatherInfo(data){
 // Get icon based on weather ID
 function getWeatherIcon(weatherId){
 
-    // Ändra string returns till ikoner/bilder från images-mappen eller liknande
     switch (true){
         case (weatherId >= 200 && weatherId < 300):
-            return "thunderstorm icon";
+            return "⛈️"; // thunderstorm
         case (weatherId >= 300 && weatherId < 400):
-            return "drizzle icon";
+            return "🌦️"; // drizzle
         case (weatherId >= 500 && weatherId < 600):
-            return "rain icon";
+            return "🌧️"; // rain
         case (weatherId >= 600 && weatherId < 700):
-            return "snow icon";
+            return "❄️"; // snow
         case (weatherId >= 700 && weatherId < 800):
-            return "mist icon";
+            return "🌫️"; // mist
         case (weatherId === 800):
-            return "clear sky/sun icon";
+            return "☀️"; // sun
         case (weatherId >= 801 && weatherId < 810):
-            return "clouds icon";
+            return "☁️"; // clouds
         default:
-            return "unknown weather/ufo icon";
+            return "🤷‍♂️"; // unknown
     }
 }
 
