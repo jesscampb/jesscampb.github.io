@@ -269,6 +269,11 @@ nav {
     font-size: 19px;
 }
 
+.project-card-details a {
+    font-weight: 700;
+    color: var(--accent-color);
+}
+
 .project-card-details-list {
     margin: 10px 0 15px;
     list-style: none;
@@ -276,10 +281,6 @@ nav {
 
 .project-card-details-list li {
     margin: 5px 0;
-}
-
-.project-card-details a {
-    font-weight: 600;
 }
 
 
