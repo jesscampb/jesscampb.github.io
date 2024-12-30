@@ -354,6 +354,7 @@ label {
 
 textarea {
     margin-top: 3px;
+    padding: 2px;
     max-width: 300px;
     width: 100%;
     resize: none;
