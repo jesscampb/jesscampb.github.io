@@ -334,11 +334,44 @@ footer {
     box-shadow: none;
 }
 
+form, .weather-card {
+    padding: 10px;
+}
+
+
+/* Contact form */
+label {
+    font-weight: 500;
+}
+
+.form-input{
+    margin-top: 2.75px;
+    padding: 2px;
+    max-width: 300px;
+    width: 100%;
+    font-family: inherit;
+}
+
+textarea {
+    margin-top: 3px;
+    max-width: 300px;
+    width: 100%;
+    resize: none;
+    font-family: inherit;
+}
+
+.form-button-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.form-button {
+    padding: 5px 10px;
+
+}
+
+/* Copyright */
 .copyright {
     font-size: 13px;
     width: 100%;
-}
-
-form, .weather-card {
-    padding: 10px;
 }
