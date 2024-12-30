@@ -380,6 +380,24 @@ textarea {
     background-color: var(--hover-depth-color);
 }
 
+/* Weather card */
+.city-display {
+    
+}
+
+.temp-display {
+
+}
+
+.feels-like-display {
+
+}
+
+.weather-icon {
+    
+}
+
+
 /* Copyright */
 .copyright {
     font-size: 13px;
