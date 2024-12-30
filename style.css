@@ -367,8 +367,16 @@ textarea {
 }
 
 .form-button {
-    padding: 5px 10px;
+    padding: 2px 10px;
+    background-color: var(--accent-color);
+    color: var(--secondary-bg-color);
+    border-radius: 15px;
+    border: none;
+    transition: background-color 0.3s ease;
+}
 
+.form-button:hover {
+    background-color: var(--hover-depth-color);
 }
 
 /* Copyright */
