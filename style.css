@@ -62,6 +62,7 @@ a {
 }
 
 a:hover {
+    cursor: pointer;
     color: var(--accent-color);
     text-shadow: 
         0 0 10px var(--accent-color),
@@ -230,7 +231,6 @@ nav {
 
 .expand-button {
     padding: 5px 0;
-    /* background-color: var(--accent-color); */
     background-image: linear-gradient(
         to left,
         var(--secondary-bg-color),
@@ -248,6 +248,7 @@ nav {
 }
 
 .expand-button:hover {
+    cursor: pointer;
     background-image: linear-gradient(
         to left,
         var(--secondary-bg-color),
