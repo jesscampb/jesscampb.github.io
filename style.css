@@ -316,7 +316,7 @@ nav {
 
 /* Footer section */
 footer {
-    padding: 10px;
+    padding: 20px;
     display: flex;
     flex-wrap: wrap;
     background-color: var(--tertiary-bg-color);
@@ -335,12 +335,12 @@ footer {
     box-shadow: none;
 }
 
-form, .weather-card {
+
+/* Contact form */
+form {
     padding: 10px;
 }
 
-
-/* Contact form */
 label {
     font-weight: 500;
 }
@@ -379,6 +379,36 @@ textarea {
 .form-button:hover {
     background-color: var(--hover-depth-color);
 }
+
+
+/* Weather card */
+.weather-card {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-bg-color);
+    border-radius: 10px;
+}
+
+.city-display {
+    font-size: 1.7rem;
+}
+
+.temp-display {
+    font-size: 1.8rem;
+    font-weight: 650;
+}
+
+.feels-like-display {
+    font-size: 0.9rem;
+}
+
+.weather-icon {
+    font-size: 2.5rem;
+}
+
 
 /* Copyright */
 .copyright {

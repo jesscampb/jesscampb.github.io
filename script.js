@@ -83,7 +83,7 @@ function displayWeatherInfo(data){
     weatherCard.textContent = '';
     // weatherCard.style.display = "flex";
 
-    const cityDisplay = document.createElement('h2');
+    const cityDisplay = document.createElement('h3');
     const tempDisplay = document.createElement('p');
     const feelsLikeDisplay = document.createElement('p');
     const weatherIcon = document.createElement('p');
