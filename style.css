@@ -24,6 +24,10 @@
 
 
 /* Text and color */
+html {
+    scroll-padding-top: 120px;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     line-height: var(--base-line-height);
@@ -73,10 +77,6 @@ a:hover {
 
 
 /* General layout */
-html {
-    scroll-padding-top: 120px;
-}
-
 main {
     margin: 50px 0;
     display: flex;
