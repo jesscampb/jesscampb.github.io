@@ -181,14 +181,13 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     gap: 30px;
 }
 
 .about-image {
     margin-right: 0px;
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    max-width: 200px;
     border: 2px solid var(--tertiary-bg-color);
     border-radius: 50%;
 }
@@ -226,7 +225,8 @@ nav {
 }
 
 .project-card-image {
-    width: 100%;
+    max-width: 100%;
+    height: auto;
     align-self: center;
     border: 1px solid var(--tertiary-bg-color);
 }
