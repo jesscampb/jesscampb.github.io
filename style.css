@@ -25,11 +25,13 @@
 
 /* Text and color */
 html {
+    font-size: var(--base-font-size);
     scroll-padding-top: 120px;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
     line-height: var(--base-line-height);
     color: var(--text-color);
     background-color: var(--primary-bg-color);
@@ -41,20 +43,26 @@ h1, h2, h3, h4{
 
 h1 {
     padding: 0 10px;
-    font-size: 35px;
+    font-size: 2.5rem;
     color: var(--accent-color);
     text-shadow: 2px 2px 2px #3333333d;
 }
 
 h2 {
+    font-size: 2rem;
     text-align: center;
     text-shadow: 1px 1px 1px #e0e0e0;
 }
 
 h3 {
+    font-size: 1.5rem;
     color: var(--accent-color);
     text-shadow: 1px 1px 2px #3333333d;
 
+}
+
+h4 {
+    font-size: 1.25rem;
 }
 
 a {
@@ -142,12 +150,12 @@ nav {
 
 .header-menu-icon {
     padding: 10px 5px;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .header-menu-btn {
     padding: 5px 10px;
-    font-size: 14px;
+    font-size: 0.75rem;
     font-weight: 600;
     color: var(--secondary-bg-color);
     background-color: var(--accent-color);
@@ -199,7 +207,7 @@ nav {
 }
 
 .skills i {
-    font-size: 34px;
+    font-size: 2rem;
 }
 
 
@@ -213,7 +221,6 @@ nav {
 .project-card-title {
     margin: 0 0 15px;
     align-self: center;
-    font-size: 22px;
 }
 
 .project-card-image {
@@ -269,7 +276,6 @@ nav {
 
 .project-card-details h4 {
     margin-top: 20px;
-    font-size: 19px;
 }
 
 .project-card-details a {
@@ -392,17 +398,9 @@ textarea {
     border-radius: 10px;
 }
 
-.city-display {
-    font-size: 1.7rem;
-}
-
 .temp-display {
-    font-size: 1.8rem;
+    font-size: 1.75rem;
     font-weight: 650;
-}
-
-.feels-like-display {
-    font-size: 0.9rem;
 }
 
 .weather-icon {
@@ -412,6 +410,6 @@ textarea {
 
 /* Copyright */
 .copyright {
-    font-size: 13px;
+    font-size: 0.8125rem;
     width: 100%;
 }
