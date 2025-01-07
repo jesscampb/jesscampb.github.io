@@ -181,12 +181,14 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
 .about-image {
     margin-right: 0px;
-    max-width: 200px;
+    max-width: 100%;
+    height: auto;
     border: 2px solid var(--tertiary-bg-color);
     border-radius: 50%;
 }
