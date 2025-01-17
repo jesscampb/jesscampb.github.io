@@ -179,6 +179,7 @@ nav {
     display: none;
     font-size: 2rem;
     color: var(--text-color);
+    cursor: pointer;
 }
 
 /* About section */
@@ -441,6 +442,14 @@ textarea {
 /* hamburgare och stacka */
 /* ändra font-sizes i main/footer */
 @media (max-width: 845px) {
+    .hamburger {
+        display: block;
+    }
+
+    .header-menu {
+        display: none;
+    }    
+
     .about {
         flex-wrap: wrap;
     }
