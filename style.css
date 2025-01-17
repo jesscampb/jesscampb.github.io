@@ -43,7 +43,7 @@ h1, h2, h3, h4{
 
 h1 {
     padding: 0 0.625rem;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: var(--accent-color);
     text-shadow: 2px 2px 2px #3333333d;
 }
@@ -426,11 +426,6 @@ textarea {
 }
 
 
-@media (max-width: 1196px) {
-    h1 {
-        font-size: 2rem;
-    }
-}
 
 @media (max-width: 912px) {
     .header-menu {
@@ -439,8 +434,8 @@ textarea {
     }
 }
 
-/* hamburgare och stacka */
-/* ändra font-sizes i main/footer */
+/* hamburgare och stacka content */
+/* ändra font-sizes i main/footer? */
 @media (max-width: 845px) {
     .hamburger {
         display: block;
