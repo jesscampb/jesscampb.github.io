@@ -49,7 +49,7 @@ h1 {
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 1.75rem;
     text-align: center;
     text-shadow: 1px 1px 1px #e0e0e0;
 }
@@ -424,14 +424,23 @@ textarea {
     width: 100%;
 }
 
-/* Tablets and phones in horizontal view */
-/* Ta bort Kontakt och Referenser ur menyn kanske löser det?*/
-@media (max-width: 1024px) {
-    /* hamburger-menu goes here */
+
+@media (max-width: 1196px) {
+    h1 {
+        font-size: 2rem;
+    }
 }
 
-/* Phones */
-@media (max-width: 767px) {
+@media (max-width: 912px) {
+    .header-menu {
+        font-size: 0.9rem;
+        gap: 0;
+    }
+}
+
+/* hamburgare och stacka */
+/* ändra font-sizes i main/footer */
+@media (max-width: 845px) {
     .about {
         flex-wrap: wrap;
     }
