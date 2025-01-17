@@ -118,6 +118,7 @@ header {
     position: sticky;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: var(--tertiary-bg-color);
     box-shadow: 0 2px 4px 0.5px rgba(0, 0, 0, 0.14);
 }
@@ -174,6 +175,14 @@ nav {
         0 0 30px rgba(51, 0, 102, 0.7);
 }
 
+header div {
+    display: flex;
+}
+
+.bx-menu {
+    font-size: 2.5rem;
+    color: var(--text-color);
+}
 
 /* About section */
 .about {
