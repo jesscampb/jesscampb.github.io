@@ -175,12 +175,9 @@ nav {
         0 0 30px rgba(51, 0, 102, 0.7);
 }
 
-header div {
-    display: flex;
-}
-
-.bx-menu {
-    font-size: 2.5rem;
+.hamburger {
+    display: none;
+    font-size: 2rem;
     color: var(--text-color);
 }
 
