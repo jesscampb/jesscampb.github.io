@@ -1,4 +1,3 @@
-// Hamburger menu
 const hamburger = document.querySelector('.hamburger');
 const mobileMenu = document.querySelector('.mobile-menu');
 
@@ -8,7 +7,6 @@ hamburger.addEventListener('click', () => {
 });
 
 
-// Collapsible project details
 function toggleProjectDetails(projectId){
     const details = document.getElementById(projectId);
 
@@ -19,5 +17,3 @@ function toggleProjectDetails(projectId){
         details.style.display = 'block';
     }
 }
-
-
