@@ -435,19 +435,22 @@ textarea {
 /* hamburgare och stacka content */
 /* ändra font-sizes i main/footer? */
 @media (max-width: 845px) {
+    header {
+        height: 4.25rem;
+    }
+    
     .header-menu {
         display: none;
     }
 
     .hamburger {
         display: block;
-        font-size: 2rem;
-        color: var(--text-color);
     }
 
     .hamburger-icon {
         padding: 0 0.625rem;
         transition: color 0.3s ease;
+        font-size: 2.6rem;
     }
 
     .hamburger-icon:hover {
@@ -455,29 +458,39 @@ textarea {
         cursor: pointer;
     }
 
+    .hamburger.active .hamburger-icon {
+        color: var(--accent-color);
+    }
+    
     .mobile-menu {
-        /* display: none; */
+        display: none;
         visibility: visible;
         position: absolute;
         right: 0rem;
+        top: 4.25rem;
         width: 100%;
         max-width: 900px;
         margin: 0 auto;
         padding: 0.625rem;
-        font-size: 1rem;
         list-style: none;
         background-color: var(--tertiary-bg-color);
-        box-shadow: 0 2px 4px 0.5px rgba(0, 0, 0, 0.14);
+        box-shadow: 0 4px 4px -0.5px rgba(0, 0, 0, 0.14);
+    }
+
+    .mobile-menu.active {
+        display: block;
     }
 
     .mobile-menu li {
         margin: 0.3125rem 0;
     }
+
     .mobile-menu-icons {
         display: flex;
         flex-direction: row;
         list-style: none;
     }
+
     .mobile-menu .header-menu-icon {
         padding: 0 0.625rem;
     }
@@ -497,5 +510,11 @@ textarea {
     .reference-card-info,
     .reference-card-comment {
         width: 100%;
+    }
+}
+
+@media (max-width: 405px) {
+    h1 {
+        font-size: 1.4rem;
     }
 }
