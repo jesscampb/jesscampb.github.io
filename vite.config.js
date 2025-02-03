@@ -1,5 +1,9 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  base: "/portfolio/"
+  base: "/Portfolio/",
+  build:{
+    minify:false,
+    compress: false
+  }
 })
