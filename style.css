@@ -276,7 +276,11 @@ nav {
 
 .project-card-details {
     padding: 0.625rem;
-    display: none
+    display: none;
+}
+
+.project-card-details.active {
+    display: block;
 }
 
 .project-card-details p {
