@@ -7,13 +7,9 @@ hamburger.addEventListener('click', () => {
 });
 
 
-function toggleProjectDetails(projectId){
-    const details = document.getElementById(projectId);
+const projectButton = document.querySelector('.expand-button');
+const projectDetails = document.querySelector('.project-card-details');
 
-    if (details.style.display === 'block'){
-        details.style.display = 'none';
-    }
-    else{
-        details.style.display = 'block';
-    }
-}
+projectButton.addEventListener('click', () => {
+    projectDetails.classList.toggle('active')
+})
