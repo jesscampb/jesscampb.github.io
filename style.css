@@ -337,87 +337,10 @@ footer {
     background-color: var(--tertiary-bg-color);
 }
 
-.hidden-heading {
+.hidden-section {
     display: none;
 }
 
-.weather-section, .contact-section {
-    padding: 0;
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    background-color: var(--tertiary-bg-color);
-    box-shadow: none;
-}
-
-
-/* Contact form */
-form {
-    padding: 0.625rem;
-}
-
-label {
-    font-weight: 500;
-}
-
-.form-input{
-    margin-top: 0.171875;
-    padding: 0.125rem;
-    max-width: 300px;
-    width: 100%;
-    font-family: inherit;
-}
-
-textarea {
-    margin-top: 0.1875rem;
-    padding: 0.125rem;
-    max-width: 300px;
-    width: 100%;
-    resize: none;
-    font-family: inherit;
-}
-
-.form-button-container {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.form-button {
-    padding: 0.125rem 0.625rem;
-    background-color: var(--accent-color);
-    color: var(--secondary-bg-color);
-    border-radius: 15px;
-    border: none;
-    transition: background-color 0.3s ease;
-}
-
-.form-button:hover {
-    background-color: var(--hover-depth-color);
-}
-
-
-/* Weather card */
-.weather-card {
-    padding: 0.625rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--primary-bg-color);
-    border-radius: 10px;
-}
-
-.temp-display {
-    font-size: 1.75rem;
-    font-weight: 650;
-}
-
-.weather-icon {
-    font-size: 2.5rem;
-}
-
-
-/* Copyright */
 .copyright {
     font-size: 0.8125rem;
     width: 100%;
@@ -432,8 +355,6 @@ textarea {
     }
 }
 
-/* hamburgare och stacka content */
-/* ändra font-sizes i main/footer? */
 @media (max-width: 845px) {
     header {
         height: 4.25rem;
