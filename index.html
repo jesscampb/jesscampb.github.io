@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -17,8 +18,6 @@
                 <li><a class="header-menu-link header-menu-item" href="#about">Om mig</a></li>
                 <li><a class="header-menu-link header-menu-item" href="#skills">Kunskaper</a></li>
                 <li><a class="header-menu-link header-menu-item" href="#projects">Mina projekt</a></li>
-                <!-- <li><a class="header-menu-link header-menu-item" href="#references">Referenser</a></li>
-                <li><a class="header-menu-link header-menu-item" href="#contact">Kontakt</a></li> -->
                 <li>
                     <a href="https://github.com/jesscampb" target="_blank">
                         <i class="devicon-github-original header-menu-icon"></i>
@@ -305,7 +304,7 @@
             </article>
         </section>
 
-        <section>
+        <section class="hidden-section">
             <a id="references"></a>
             <h2>Det här säger andra om mig</h2>
 
@@ -367,52 +366,9 @@
 
     </main>
 
-    <footer>
-
-        <section class="contact-section">
-            <a id="contact"></a>
-            <h2 class="hidden-heading">Kontaktformulär</h2>
-
-            <form id="contact-form" novalidate action="https://formshow.systementor.se" method="post" target="_blank">
-                <label>Lämna ett meddelande</label>
-                <div>
-                    <input class="form-input" type="text" name="Namn" id="name" size="30" placeholder="Namn"
-                     data-pristine-required-message="Detta fält måste fyllas i."
-                     data-pristine-minlength-message="Du måste ange minst 2 tecken."
-                     required minlength="2" maxlength="40">
-                </div>
-                <div>
-                    <input class="form-input" type="email" name="Email" id="email" size="30" placeholder="E-mail"
-                     data-pristine-required-message="Detta fält måste fyllas i."
-                     data-pristine-email-message="Ange en giltig e-mailadress."
-                     required maxlength="30">
-                </div>
-                <div class="form-message-container">
-                    <textarea name="Meddelande" id="message" cols="40" rows="5" placeholder="Meddelande"
-                     data-pristine-required-message="Detta fält måste fyllas i."
-                     data-pristine-minlength-message="Meddelandet måste vara minst 5 tecken."
-                     required minlength="5" maxlength="150"></textarea>
-                </div>
-                <div class="form-button-container">
-                    <input class="form-button" type="submit" value="Skicka">
-                </div>
-            </form>
-        </section>
-
-        <section class="weather-section">
-            <h2 class="hidden-heading">Väderkort</h2>
-
-            <div class="weather-card">
-            </div>
-        </section>
-        
-        <div class="custom-divider"></div>
-
-        <p class="copyright">&copy; 2024 Jessica Campbell</p>
+    <footer>        
+        <p class="copyright">&copy; 2025 Jessica Campbell</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/pristinejs@1.1.0/dist/pristine.min.js"></script>
-    <script src="initpristine.js"></script>
-    <script src="script.js"></script>
 </body>
 </html>
