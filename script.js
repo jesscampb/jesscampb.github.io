@@ -7,9 +7,11 @@ hamburger.addEventListener('click', () => {
 });
 
 
-const projectButton = document.querySelector('.expand-button');
-const projectDetails = document.querySelector('.project-card-details');
+const projectButtons = document.querySelectorAll('.expand-button');
+const projectDetails = document.querySelectorAll('.project-card-details');
 
-projectButton.addEventListener('click', () => {
-    projectDetails.classList.toggle('active')
-})
+projectButtons.forEach((button, index) => {
+    button.addEventListener('click', () => {
+        projectDetails[index].classList.toggle('active')
+    });
+});
