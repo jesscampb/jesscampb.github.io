@@ -7,7 +7,6 @@ Projektet är från början ett examinerande moment i kursen *Frontend 1* under 
 - **Om mig**: En kort introduktion av mig själv, tillsammans med en bild.
 - **Kunskaper**: De teknologiska kunskaperna jag har och kommer att få från utbildningen visas här, i form av ikoner.
 - **Mina projekt**: Här listar jag några av de projekt som jag har arbetat med. Klicka på den hopfällbara knappen "Detaljer" för att visa mer information om projektet, samt en länk till dess repository på GitHub.
-- **Referenser**: Här visas några referenser som berättar vad de tycker om mig.
 - **GitHub-ikon**: Finns till höger i menyn. Om man klickar på denna så kommer man till min GitHub-profil.
 - **LinkedIn-ikon**: Finns till höger i menyn. Om man klickar på denna så kommer man till min LinkedIn-profil.
 - **Ladda ner CV**: Knappen, som finns längst till höger i menyn, öppnar upp mitt CV i en ny flik så att man kan läsa och ladda ner det.
@@ -15,7 +14,7 @@ Projektet är från början ett examinerande moment i kursen *Frontend 1* under 
 
 ## Teknologier
 - **HTML5**: Semantisk struktur
-- **CSS3**: Styling
+- **CSS**: Styling
 - **JavaScript**: Interaktivitet
 - **Vite**: Bygg- och utvecklingsverktyg
 - **Git/GitHub**: Versionshantering
